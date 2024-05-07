@@ -5,7 +5,7 @@ plugins {
     id "run.halo.plugin.devtools" version "0.0.7"
 }
 
-group 'run.halo.starter'
+group 'run.halo.injection'
 sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
@@ -51,6 +51,17 @@ build {
     }
 }
 
+
 halo {
     version = '2.11'
+    superAdminUsername = 'admin'
+    superAdminPassword = 'admin'
+    externalUrl = 'http://localhost:8090'
+    docker {
+        url = 'npipe:////./pipe/docker_engine'
+        apiVersion = '1.45'
+    }
+    port = 8090
+    debug = true
+    debugPort = 5005
 }

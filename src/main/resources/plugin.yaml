@@ -4,7 +4,7 @@ apiVersion: plugin.halo.run/v1alpha1
 kind: Plugin
 metadata:
   # The name defines how the plugin is invoked, A unique name
-  name: starter
+  name: Injection
 spec:
   enabled: true
   requires: ">=2.11.0"
@@ -15,7 +15,7 @@ spec:
   homepage: https://github.com/halo-dev/plugin-starter#readme
   repo: https://github.com/halo-dev/plugin-starter
   issues: https://github.com/halo-dev/plugin-starter/issues
-  displayName: "插件快速开始模板"
+  displayName: "代码注入插件"
   description: "这是一个插件快速开始模板"
   license:
     - name: "GPL-3.0"

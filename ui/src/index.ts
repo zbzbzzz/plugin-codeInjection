@@ -1,6 +1,6 @@
 import { definePlugin } from "@halo-dev/console-shared";
-import HomeView from "./views/HomeView.vue";
-import { IconPlug } from "@halo-dev/components";
+import InjectionList from "./views/InjectionList.vue";
+import { IconCodeBoxLine } from "@halo-dev/components";
 import { markRaw } from "vue";
 
 export default definePlugin({
@@ -9,16 +9,16 @@ export default definePlugin({
     {
       parentName: "Root",
       route: {
-        path: "/example",
-        name: "Example",
-        component: HomeView,
+        path: "/injection",
+        name: "Injection",
+        component: InjectionList,
         meta: {
-          title: "示例页面",
+          title: "代码插入",
           searchable: true,
           menu: {
-            name: "示例页面",
-            group: "示例分组",
-            icon: markRaw(IconPlug),
+            name: "代码插入",
+            group: "外观",
+            icon: markRaw(IconCodeBoxLine),
             priority: 0,
           },
         },
